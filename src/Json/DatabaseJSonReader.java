@@ -26,7 +26,7 @@ public class DatabaseJSonReader {
 		StringBuffer data=new StringBuffer();
 		while(j.hasNext()) {
 			String n=j.nextName();
-			data.append(mando.analisis(n,j));
+			data.append(mando.sum(n,j));
 		}
 
 		j.endObject();

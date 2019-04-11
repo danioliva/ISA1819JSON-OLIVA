@@ -61,12 +61,12 @@ public class readRescueMedicine extends cMando{
 		}
 		
 		@Override
-		public String analisis(String n, JsonReader j) throws IOException {
+		public String sum(String n, JsonReader j) throws IOException {
 			StringBuffer data=new StringBuffer();
 			if(n.equals(RESCUEMEDPRES_TAGNAME)) {
 				data.append(readRescueMedicinePresentations(j).append("/n"));
 			}else if(sucesor==null) {
-				data.append(sucesor.analisis(n, j));
+				data.append(sucesor.sum(n, j));
 			} else {
 				j.skipValue();
 				data.append("Category " + n + " not processed.").append("\n");

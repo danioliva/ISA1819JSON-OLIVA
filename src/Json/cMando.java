@@ -11,6 +11,6 @@ public abstract class cMando {
 		this.sucesor=sucesor;
 	}
 	
-	abstract String analisis(String n, JsonReader j) throws IOException;
+	abstract String sum(String n, JsonReader j) throws IOException;
 	
 }
